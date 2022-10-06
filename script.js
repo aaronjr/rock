@@ -14,7 +14,7 @@ function getInput(){
 }
 
 getInput()
-b = choice[Math.random() * 3]
+b = choice[Math.floor(Math.random() * 3)]
 console.log(b)
 
 if (a == "ROCK" && b == "SCISSORS"){

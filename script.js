@@ -10,12 +10,10 @@ function getInput(){
     else{
         getInput()
     }
-    
 }
 
 getInput()
 b = choice[Math.floor(Math.random() * 3)]
-console.log(b)
 
 if (a == "ROCK" && b == "SCISSORS"){
     console.log("You lose, rock blunts scissors")

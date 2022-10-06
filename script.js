@@ -1,3 +1,13 @@
+input = prompt("Rock paper or scissors?")
+
+a = input.toUpperCase()
+
+
+choice = ["ROCK", "PAPER", "SCISSORS"]
+b = choice[Math.random()]
+
+console.log(b)
+
 if (a == "ROCK" && b == "SCISSORS"){
     console.log("You lose, rock blunts scissors")
   }

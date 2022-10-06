@@ -1,11 +1,20 @@
-input = prompt("Rock paper or scissors?")
-
-a = input.toUpperCase()
-
 
 choice = ["ROCK", "PAPER", "SCISSORS"]
-b = choice[Math.random()]
 
+function getInput(){
+    input = prompt("Rock paper or scissors?")
+    a = input.toUpperCase()
+    if(choice.includes(a)){
+        return a
+    }
+    else{
+        getInput()
+    }
+    
+}
+
+getInput()
+b = choice[Math.random() * 3]
 console.log(b)
 
 if (a == "ROCK" && b == "SCISSORS"){

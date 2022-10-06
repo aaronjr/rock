@@ -1,0 +1,243 @@
+body{
+    min-height: 10vh;
+    background-color: rgba(254, 246, 255, 0.233);
+    font-family: 'DynaPuff', cursive;
+}
+
+.secondbody{
+    margin: auto;
+    margin-top: 0px;
+    width:90%;
+}
+.nav{
+    display: flex;
+    position: relative;
+    margin-bottom:50px;
+}
+.scoreboard{
+    margin:30px;
+    width:400px;
+    margin-bottom: 0px;
+
+}
+.scores{
+    padding:0px;
+    padding-bottom:3px;
+    margin:0px;
+    font-size: 1.5rem;
+}
+
+.title{
+    color:rgb(30, 34, 33);
+    text-align: center;
+    width: 100%;
+    font-size: xxx-large;
+    position: absolute;
+    left:0;
+    top:0;
+
+}
+
+.options{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    visibility:visible;
+    /* display: inline-block*/
+}
+.ops{
+    width:300px;
+    height:300px;
+    margin: auto;
+    border: royalblue solid 20px;
+    padding:25px;
+    border-radius: 50%;
+}
+.ops > img{
+    z-index: 1;
+    width:300px;
+    height:300px;
+    margin: auto;
+}
+.compchoice > .ops > img{
+    rotate: -90deg;
+}
+.userchoice > .ops > img{
+    rotate: 90deg;
+}
+
+.playagain{
+    visibility: visible;
+    animation-name: ease;
+    animation-duration: 3.5s;
+}
+.playagain > h2{
+    text-align: center;
+    font-size: 3rem;
+    margin:0px;
+    margin-bottom: 5px;
+    padding:0px;
+}
+.button{
+    margin:auto;
+    width:250px;
+    height:90px;
+    background-color: royalblue;
+    opacity: .9;
+    color: black;
+    border: solid royalblue 3px;
+    border-radius: 5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    box-shadow: 10%;
+    color: white;
+}
+.button:hover{
+    background-color: gold;
+    color: royalblue;
+}
+
+.fight{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    margin: auto;
+}
+.outcome{
+    height: 100%;
+    text-align: center;
+    font-size: -webkit-xxx-large;
+    margin:auto;
+    animation-name: ease;
+    animation-duration: 2.5s;
+}
+.outcomeheading{
+    text-align: center;
+    font-size: -webkit-xxx-large;
+    margin-top: 50px;
+    animation-name: ease;
+    animation-duration: 2.5s;
+    height: 200px;
+    padding: 0px;
+}
+
+.compchoice, .userchoice, .a, .b{
+    position: relative;
+    top: 0;
+    left: 0;
+    margin:auto;
+}
+.winner{
+    width:300px;
+    margin: auto;
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    animation-name: ease;
+    animation-duration: 2.5s;
+    z-index: 99;
+}
+
+.hidden{
+    visibility: hidden;
+    display: none;
+}
+
+.options >.ops:hover{
+    background-color: gold;
+    animation-name: shake;
+    animation-duration: 1s;
+}
+
+.compchoice > .ops > img:first-of-type{
+    animation-name: ease;
+    animation-duration: 2.5s;
+}
+.userchoice > .ops > img:first-of-type{
+    animation-name: ease;
+    animation-duration: 2.5s;
+}
+.rockplaceholderleft{
+    opacity: 0;
+    width:300px;
+    height:300px;
+    margin: auto;
+    border: royalblue solid 20px;
+    padding:25px;
+    border-radius: 50%;
+    margin: auto;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation-name: handmoveleft;
+    animation-duration: 2.5s;
+}
+.rockplaceholderright{
+    opacity: 0;
+    width:300px;
+    height:300px;
+    margin: auto;
+    border: royalblue solid 20px;
+    padding:25px;
+    border-radius: 50%;
+    margin: auto;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation-name: handmoveright;
+    animation-duration: 2.5s;
+}
+
+@keyframes shake {
+    from {rotate: -3deg;}
+    to {rotate: 3deg;}
+  }
+
+@keyframes handmoveright {
+    0% {rotate: -100deg;
+        opacity: 1;}
+    20%{rotate: -80deg;
+        opacity: 1;}
+    30% {rotate: -100deg;
+        opacity: 1;}
+    40%{rotate: -80deg;
+        opacity: 1;}
+    50% {rotate: -100deg;
+        opacity: 1;}
+    60%{rotate: -80deg;
+        opacity: 1;}
+    70% {rotate: -100deg;
+        opacity: 1;}
+    80%{rotate: -80deg;
+        opacity: 1;}
+    90% {rotate: -90deg;
+        opacity: 1;}
+  }
+
+@keyframes handmoveleft {
+    0% {rotate: 100deg;
+        opacity: 1;}
+    20%{rotate: 80deg;
+        opacity: 1;}
+    30% {rotate: 100deg;
+        opacity: 1;}
+    40%{rotate: 80deg;
+        opacity: 1;}
+    50% {rotate: 100deg;
+        opacity: 1;}
+    60%{rotate: 80deg;
+        opacity: 1;}
+    70% {rotate: 100deg;
+        opacity: 1;}
+    80%{rotate: 80deg;
+        opacity: 1;}
+    90% {rotate: 90deg;
+        opacity: 1;}
+}
+
+@keyframes ease {
+    from {opacity: 0;}
+    to {opacity :0}
+}
+  
+  

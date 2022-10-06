@@ -2,12 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock paper scissors</title>
-    <script src="script.js"></script>
+    <title>Aaron</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="secondbody">
+        <div class="nav">
+            <div class="scoreboard">
+                <div>
+                    <h3 class=scores>Games played: <span class="games">0</span></h3>
+                </div>
+                <div>
+                    <h3 class=scores>Won: <span class="won">0</span></h3>
+                </div>
+                <div>
+                    <h3 class=scores>Lost: <span class="lost">0</span></h3>
+                </div>
+                <div>
+                    <h3 class=scores>Draw: <span class="draw">0</span></h3>     
+                </div>
+            </div>
+            <h1 class="title"> ROCK - PAPER - SCISSORS </h1>
+        </div>
+
+        <div id="options" class="hidden">
+            <div class="ops"><img value="ROCK" id="ops" src="https://res.cloudinary.com/itsellej/image/upload/v1533400140/rock-paper-scissors/rock.png"></div>
+            <div class="ops"><img value="PAPER" id="ops" src="https://res.cloudinary.com/itsellej/image/upload/v1533400143/rock-paper-scissors/paper.png"></div>
+            <div class="ops"><img value="SCISSORS" id="ops" src="https://res.cloudinary.com/itsellej/image/upload/v1533400144/rock-paper-scissors/scissors.png"></div>
+        </div>
+
+        <div id="fight" class="hidden">
+        </div>
+
+
+        <div id="playagain" class="hidden">
+            <h2>Play again?<h2>
+            <div class="playoptions">
+                <button value="yes" class="button playbtn">YES</button>
+                <button value="no" class="button playbtn">NO</button>
+            </div>
+        </div>
+
+    </div>
+
 </body>
+<script src="script.js"></script>
 </html>
+
+
+
+
+
